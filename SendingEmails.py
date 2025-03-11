@@ -7,10 +7,6 @@ import smtplib  # Para poder enviar el mensaje
 df = pd.read_excel("DatosUsuarios.xlsx")
 print(df.head())
 
-df["Telefono"] = "123456"
-df["Email"] = "ejemplo@gmail.com"
-
-df.to_excel("DatosUsuarios.xlsx", index = False)
 
 # Limpiar y filtrar datos
 df['Genero'] = df['Genero'].str.strip().str.lower()
