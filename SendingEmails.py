@@ -17,8 +17,8 @@ print(fm_email)
 print(ml_email)
 
 # Credenciales de correo
-email_sender = 'moonamadeus13@gmail.com'
-password = 'kqlt bhrw xmop aisw'  # contraseña de aplicación
+email_sender = 'example@gmail.com'
+password = 'PASSWORD'  # contraseña de aplicación
 
 # Configuración SSL
 context = ssl.create_default_context()
