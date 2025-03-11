@@ -55,4 +55,10 @@ Gracias por tu inspiración y por hacer del mundo un lugar mejor. 💜
 
 ¡Feliz Día del Hombre!"""
 
+        msg = EmailMessage()
+        msg['From'] = email_sender
+        msg['To'] = ", ".join(ml_email)
+        msg['Subject'] = subject
+        msg.set_content(body)
 
+        smtp.sendmail(email_sender, ml_email, msg.as_string())
